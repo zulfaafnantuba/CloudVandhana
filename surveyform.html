@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Survey Form</title>
+    <style>
+        body {
+            background-color: #0073e6;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #0073e6;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .options label {
+            display: flex;
+            align-items: center;
+        }
+
+        .satisfaction-options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px; /* Added margin-top */
+        }
+
+        .satisfaction-options label {
+            display: flex;
+            align-items: center;
+        }
+
+        .suggestion-box {
+            width: 100%;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #submit-button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .name-email-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer {
+            color: #0073e6;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Customer Survey Form</h1>
+    <div class="form-container">
+        <form id="survey-form">
+            <div class="name-email-row">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+            </div>
+
+            <label>Is this your first time using our products and services?</label>
+            <div class="options">
+                <label>
+                    <input type="radio" id="first-time-yes" name="first-time" value="Yes" required> Yes
+                </label>
+                <label>
+                    <input type="radio" id="first-time-no" name="first-time" value="No"> No
+                </label>
+            </div>
+
+            <label>Would you recommend our products and services to your friends and colleagues?</label>
+            <div class="options">
+                <label>
+                    <input type="radio" id="recommend-yes" name="recommend" value="Yes" required> Yes
+                </label>
+                <label>
+                    <input type="radio" id="recommend-no" name="recommend" value="No"> No
+                </label>
+            </div>
+
+            <label>How satisfied are you with your company overall?</label>
+            <div class="satisfaction-options">
+                <label>
+                    <input type="radio" id="satisfied" name="satisfaction" value="Satisfied" required> Satisfied
+                </label>
+                <label>
+                    <input type="radio" id="unsatisfied" name="satisfaction" value="Unsatisfied"> Unsatisfied
+                </label>
+                <label>
+                    <input type="radio" id="undecided" name="satisfaction" value="Undecided"> Undecided
+                </label>
+            </div>
+
+            <label for="suggestions">Do you have any suggestions to improve our service?</label>
+            <textarea id="suggestions" class="suggestion-box"></textarea>
+
+            <div class="button-container">
+                <button type="submit" id="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        2018 Customer Survey Form. All Rights Reserved | Designed by w3Layouts.
+    </div>
+</body>
+</html>
